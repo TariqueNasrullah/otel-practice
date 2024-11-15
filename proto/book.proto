@@ -1,7 +1,7 @@
 syntax = "proto3";
 package protobuf;
 
-option go_package = "github.com/TariqueNasrullah/otel-practice/protobuf";
+option go_package = "github.com/TariqueNasrullah/otel-practice";
 
 message Book {
   string id = 1;
