@@ -1,0 +1,15 @@
+---
+version: '3.9'
+services:
+  core_app:
+    build: .
+    ports:
+      - 8080:8080
+      - 8081:8081
+
+  prometheus:
+    image: prom/prometheus:v2.55.1
+    ports:
+      - 9090:9090
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
