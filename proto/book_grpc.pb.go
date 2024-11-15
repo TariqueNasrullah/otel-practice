@@ -4,7 +4,7 @@
 // - protoc             v5.28.3
 // source: book.proto
 
-package otel_practice
+package proto
 
 import (
 	context "context"
